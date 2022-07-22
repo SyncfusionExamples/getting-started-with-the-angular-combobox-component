@@ -1,8 +1,9 @@
-<ejs-gantt height="490px"
-    [dataSource]="data"
-    [taskFields]="taskSettings"
-    [columns]="columnSettings"
-    [editSettings]="editOptions"
-    [toolbar]="toolbarOptions"
-    [allowSelection]="true">
-</ejs-gantt>
+<div class="container">
+  <ejs-combobox placeholder="Select employee"
+      [dataSource]="remoteData"
+      [fields]="fieldSettings"
+      [query]="query"
+      popupHeight="250px"
+      popupWidth="300px"
+      [autofill]="true"></ejs-combobox>
+</div>

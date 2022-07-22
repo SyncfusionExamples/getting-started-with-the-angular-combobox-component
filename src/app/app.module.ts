@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { GanttModule, EditService, ToolbarService, SelectionService } from '@syncfusion/ej2-angular-gantt';
+import { ComboBoxModule } from '@syncfusion/ej2-angular-dropdowns';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,10 +8,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    GanttModule
+    BrowserModule, ComboBoxModule
   ],
-  providers: [EditService, ToolbarService, SelectionService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
